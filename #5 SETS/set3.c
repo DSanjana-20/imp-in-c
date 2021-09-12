@@ -32,7 +32,7 @@ int main() {
     printf("Enter character to be searched : ");
     scanf("%c", &key);
     printf("Enter filename with extension : ");
-    scanf("%s", &s);
+    scanf("%s", &key);
     FILE *ptr = fopen(s, "r");
     if (ptr == NULL) {
         printf("File does not exist!");
