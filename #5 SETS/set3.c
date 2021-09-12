@@ -25,7 +25,6 @@ void main() {
 
 // Write a C program to count the number of times a character occurs in a text file. The file name and the character are supplied as command line arguments
 #include <stdio.h>
-#include <stdio.h>
 int main() {
     char s[100], ch, key;
     int count = 0;
