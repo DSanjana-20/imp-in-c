@@ -21,7 +21,7 @@ int rem(int a, int b) {
 void main() {
     int a, b;
     char sign;
-    printf("Enter sign(+,-,*,/,%%) : ");
+    printf("Enter sign(+ - * / %%) : ");
     scanf("%c", &sign);
     printf("Enter two numbers : ");
     scanf("%d %d", &a, &b);
