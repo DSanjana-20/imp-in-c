@@ -25,6 +25,7 @@ void main() {
 
 // Write a C program to count the number of times a character occurs in a text file. The file name and the character are supplied as command line arguments
 #include <stdio.h>
+#include <stdlib.h>
 int main() {
     char s[100], ch, key;
     int count = 0;
@@ -33,6 +34,10 @@ int main() {
     printf("Enter filename with extension : ");
     scanf("%s", &s);
     FILE *ptr = fopen(s, "r");
+    if (ptr == NULL) {
+        printf("File does not exist!");
+        exit(0);
+    }
     while ((ch = fgetc(ptr)) != EOF) {
         if (ch == key) {
             count += 1;
